@@ -2,6 +2,8 @@
 
 A beautifully designed, modern weather application that provides real-time weather information for any city around the world. Built with HTML, CSS, and JavaScript, featuring a sleek glassmorphism aesthetic and smooth animations.
 
+** Live Demo:** [https://weather-app-liard-kappa-20.vercel.app](https://weather-app-liard-kappa-20.vercel.app)
+
 ##  Features
 
 - **Real-Time Weather Data**: Fetches accurate weather data using the OpenWeatherMap API.
