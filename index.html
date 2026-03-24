@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+
+  <div class="card">
+    <div class="search">
+      <input type="text" placeholder="City name…" id="searchInput" />
+      <button id="searchBtn" aria-label="Search">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="7"/>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+        </svg>
+      </button>
+    </div>
+
+    <div class="error" id="errorMsg">City not found. Please try again.</div>
+    <div class="loading" id="loadingMsg"><span class="loading-dots">Loading</span></div>
+
+    <div class="weather" id="weatherSection">
+      <div class="weather-top">
+        <div class="temp-block">
+          <div class="temp" id="temp">—</div>
+          <div class="city" id="city">—</div>
+          <div class="condition-label" id="conditionLabel">—</div>
+        </div>
+        <div class="weather-icon-wrap" id="weatherEmoji">🌤</div>
+      </div>
+
+      <hr class="divider" />
+
+      <div class="details">
+        <div class="col">
+          <div class="icon">💧</div>
+          <div class="label">Humidity</div>
+          <div class="value" id="humidity">—</div>
+        </div>
+        <div class="col">
+          <div class="icon">🌬</div>
+          <div class="label">Wind</div>
+          <div class="value" id="wind">—</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js">  </script>
+</body>
+</html>
